@@ -124,13 +124,14 @@ public class PlayerManager : MonoBehaviour
         
 
         if (Input.GetKeyDown(KeyCode.Space)) 
-        { 
+        {
+            //float jump = rb.AddForce.up;
             //rb.AddForce(new Vector3(rb.velocity.x, rb.velocity.y*jumpPower,rb.velocity.z));
             rb.AddForce(new Vector3(rb.velocity.x, jumpPower, rb.velocity.z), ForceMode.Impulse);
             Debug.Log("we jumped.");
-            playerAnimator.SetBool("isPJumping", true); 
+            playerAnimator.SetBool("isPJumping", true);
+             
 
-         
         }
         else if (Input.GetKeyUp(KeyCode.LeftShift))
         {

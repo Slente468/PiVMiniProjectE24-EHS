@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 //so something in my old script stopped working, so did it a second time and this works but. 
-
+// this line adds components  onto whatever the script is on.
+[RequireComponent(typeof(Rigidbody))]//Note: this line of code must be on top of the inheritence public class from mono behavior, to work. 
 public class PM : MonoBehaviour
 {
     // Movement inputs is raw
@@ -49,11 +50,7 @@ public class PM : MonoBehaviour
 
         //jump method
         PlayerInputJump();
-    }
 
-    // FixedUpdate for applying movement
-    void FixedUpdate()
-    {
         // Move the player
         if (moveDirection != Vector3.zero)
         {
@@ -64,8 +61,10 @@ public class PM : MonoBehaviour
                 rb.velocity = new Vector3(moveDirection.x * runningSpeed, rb.velocity.y, moveDirection.z * runningSpeed);
             }
         }
-        
     }
+
+    
+    
 
     // Handle rotation and animations
     private void PlayerRotationAndAnimations()
@@ -84,6 +83,8 @@ public class PM : MonoBehaviour
         {
             // Play idle animation
             playerAnimator.SetBool("isPWalking", false);
+            playerAnimator.SetBool("isPIdle", true);
+            //taking no chances
         }
     }
     void PlayerInputJump()
@@ -92,6 +93,7 @@ public class PM : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            //rb.AddForce.up = jump;
             //rb.AddForce(new Vector3(rb.velocity.x, rb.velocity.y*jumpPower,rb.velocity.z));
             rb.AddForce(new Vector3(rb.velocity.x, jumpPower, rb.velocity.z), ForceMode.Impulse);
             Debug.Log("we jumped.");
@@ -99,7 +101,7 @@ public class PM : MonoBehaviour
 
 
         }
-        else if (Input.GetKeyUp(KeyCode.LeftShift))
+        else if (Input.GetKeyUp(KeyCode.Space))
         {
             playerAnimator.SetBool("isPJumping", false);
         }
