@@ -106,11 +106,9 @@ This includes building them from scratch, rigging them and texture painting them
 | Made HorseMovement script                     | ⅔ hour                      |
 | Research into getting blender’s rigged model’s bones 2 show up in unity       | 3 hours                     |
 | Made animations to mount, player model in unity  | 5 ⅚ hours                   |
-| Terrain creation using Unity tools        | 2 ⅓ hours                   |
-| Implementing camera rotation with player  | 1 ⅓ hour                    |
-| Bug fixing                                | 9 ½ hours                   |
+
 | **Total (Game Implementation)**           | **69 ⅙ hours**              |
-| Research into excluded/unfinished features| **19 ⅙ hours**              |
+
 | **Total Development Time**                | **88 ⅓ hours**              |
 
 
