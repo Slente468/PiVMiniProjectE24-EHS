@@ -810,7 +810,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -919,10 +919,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44ac167e4d970ef489896418d4b5cbbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isTorstarted: 0
+  isStartstarted: 0
   rainyweather: {fileID: 8300000, guid: d0c4af9a435b52e44b73604db335842e, type: 3}
-  peacefulMorning: {fileID: 0}
-  youSayRun: {fileID: 0}
-  TutorialOne: {fileID: 0}
+  peacefulMorning: {fileID: 8300000, guid: 8f21699746457b44e9be5c2bbabcb42a, type: 3}
+  E24: {fileID: 8300000, guid: c0bd7aa5877e44b4dad268602bd4ae8c, type: 3}
+  TutorialOne: {fileID: 8300000, guid: 2ebee6e8767eb6a4e9bab16cc7b86a0a, type: 3}
   Musiclist:
   - {fileID: 0}
   - {fileID: 0}
@@ -961,6 +963,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTorstarted: 0
+  isStartstarted: 0
 --- !u!114 &1576860354
 MonoBehaviour:
   m_ObjectHideFlags: 0
