@@ -25,14 +25,14 @@ public class PM : MonoBehaviour
     [SerializeField] private float runningSpeed = 15f;
 
     // Animator reference
-    private Animator playerAnimator;
+    [SerializeField] private Animator playerAnimator;
 
     // Start is called before the first frame update
     void Start()
     {
         // Initialize Rigidbody and Animator components
         rb = GetComponent<Rigidbody>();
-        playerAnimator = GetComponent<Animator>();
+        //playerAnimator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
