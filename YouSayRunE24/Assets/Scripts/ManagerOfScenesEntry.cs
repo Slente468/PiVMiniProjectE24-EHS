@@ -65,7 +65,7 @@ public class ManagerOfScenesEntry : MonoBehaviour
     public void ResetGame()
     {
         //This method is put in update, it does: when player press Esc then the method pauseMenu will be loaded. up.
-        //scene is not made. 
+        
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             Settings();

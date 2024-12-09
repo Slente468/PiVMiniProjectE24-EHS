@@ -274,9 +274,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "- Movement is through the WASD keys, \n\n- One jumps with pressing  space.
-    \n\n-left shift and hold for running.\n\n-to mount horse, go onto the left side
-    of it. \n\n"
+  m_text: "- Movement is through the WASD keys, \n- One jumps with pressing space.
+    \n-Left shift and hold for running.\n- Pet a horse with E, when in range. \n-Switch
+    music press V, in any scene.\n- Esc to reset, if getting stuck on terrain and
+    the like. \n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -303,8 +304,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 18.26
+  m_fontSizeBase: 18.26
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1041,6 +1042,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2057185101}
     m_Modifications:
+    - target: {fileID: 1446981569432096655, guid: 2f9c2c7181f072841889300d7e675e85, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 2ebee6e8767eb6a4e9bab16cc7b86a0a, type: 3}
     - target: {fileID: 3499990511775887383, guid: 2f9c2c7181f072841889300d7e675e85, type: 3}
       propertyPath: m_Name
       value: Music

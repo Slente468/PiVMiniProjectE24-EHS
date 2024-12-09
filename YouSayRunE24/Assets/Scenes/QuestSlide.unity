@@ -503,6 +503,68 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 485310867}
   m_CullTransparentMesh: 1
+--- !u!1001 &873807751
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1576860357}
+    m_Modifications:
+    - target: {fileID: 3499990511775887383, guid: 2f9c2c7181f072841889300d7e675e85, type: 3}
+      propertyPath: m_Name
+      value: Music
+      objectReference: {fileID: 0}
+    - target: {fileID: 7272592748712258253, guid: 2f9c2c7181f072841889300d7e675e85, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 30.148224
+      objectReference: {fileID: 0}
+    - target: {fileID: 7272592748712258253, guid: 2f9c2c7181f072841889300d7e675e85, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 24.075867
+      objectReference: {fileID: 0}
+    - target: {fileID: 7272592748712258253, guid: 2f9c2c7181f072841889300d7e675e85, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7272592748712258253, guid: 2f9c2c7181f072841889300d7e675e85, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7272592748712258253, guid: 2f9c2c7181f072841889300d7e675e85, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7272592748712258253, guid: 2f9c2c7181f072841889300d7e675e85, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7272592748712258253, guid: 2f9c2c7181f072841889300d7e675e85, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7272592748712258253, guid: 2f9c2c7181f072841889300d7e675e85, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7272592748712258253, guid: 2f9c2c7181f072841889300d7e675e85, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7272592748712258253, guid: 2f9c2c7181f072841889300d7e675e85, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2f9c2c7181f072841889300d7e675e85, type: 3}
+--- !u!4 &873807752 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7272592748712258253, guid: 2f9c2c7181f072841889300d7e675e85, type: 3}
+  m_PrefabInstance: {fileID: 873807751}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &894645311
 GameObject:
   m_ObjectHideFlags: 0
@@ -560,9 +622,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Here\u2019s the quest for today: Find the rock golem at the top of the
-    mountain, just get in close and it will end the run!\r\nHow you do it is up to
-    you. Click Ready, whenever.\r\n"
+  m_text: "Here\u2019s the quest for today: Find the rock golem at the buttom of
+    the mountain, just get in close and it will end the run!\r\nHow you do it is
+    up to you. Click Ready, whenever.\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -924,8 +986,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'What''s with the long face??
 
-    You say that I tell you this every
-    time we meet?  Well, it''s good for a reminder you know.
+    You say that I tell you this every time
+    we meet?  Well, it''s good for a reminder you know.
 
 '
   m_isRightToLeft: 0
@@ -1145,9 +1207,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44ac167e4d970ef489896418d4b5cbbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isTorstarted: 0
+  isStartstarted: 0
   rainyweather: {fileID: 8300000, guid: d0c4af9a435b52e44b73604db335842e, type: 3}
   peacefulMorning: {fileID: 0}
-  youSayRun: {fileID: 0}
+  E24: {fileID: 0}
   TutorialOne: {fileID: 0}
   Musiclist:
   - {fileID: 0}
@@ -1188,6 +1252,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTorstarted: 0
+  isStartstarted: 0
 --- !u!114 &1576860354
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1265,7 +1330,7 @@ RectTransform:
   m_Children:
   - {fileID: 485310868}
   - {fileID: 1983852470}
-  - {fileID: 1588778272}
+  - {fileID: 873807752}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1281,138 +1346,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1576860352}
   m_CullTransparentMesh: 1
---- !u!1 &1588778271
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1588778272}
-  - component: {fileID: 1588778273}
-  m_Layer: 5
-  m_Name: Music
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1588778272
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1588778271}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1576860357}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!82 &1588778273
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1588778271}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: d1fbed6a98274cc4588c17036c0ab817, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1 &1816264854
 GameObject:
   m_ObjectHideFlags: 0

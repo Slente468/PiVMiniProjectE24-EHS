@@ -1,3 +1,12 @@
+///  Note,looking through my scripts you will find two types of notes, the ones right over lines of code and the ones under.
+///The ones right over are ones that describe why the code line(s) are there and what they do, and what they are connected to. 
+///- So all the useful stuff. Then the ones below the line(s) of code, those are additional notes, summaries of things tried, 
+///lessons learned and why that specific line of code is written like that instead of xyz. 
+///In those additional notes there might show up a Reminder: [something], they are short-hand for something, which we can read about in the Reminder script. 
+
+
+
+
 // There is only one purpose for this script. 
 
 //That is to explain my short-hand reminders, normally I will just type these all the way out inside my scripts,
@@ -25,3 +34,8 @@
 
 
 //transformation.forward = z | Remember to build scene in that direction, so z is forward, else you can be confused when making moveDirection and PlayerMovements, it works but it looks like it does not. So you might think it does not. //Spent 4 hours~ once, because of this.
+
+
+
+
+

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-//so something in my old script stopped working, so did it a second time and this works but. 
+//so something in my old script stopped working, so did it a second time, because time and this works 
 // this line adds components  onto whatever the script is on.
 [RequireComponent(typeof(Rigidbody))]//Note: this line of code must be on top of the inheritence public class from mono behavior, to work. 
 public class PM : MonoBehaviour
@@ -27,6 +27,10 @@ public class PM : MonoBehaviour
     // Animator reference
     [SerializeField] private Animator playerAnimator;
 
+    /// <summary>
+    /// the horse mounting happens in HorseMovement Script. Go there, to do the mounting press E. 
+    /// </summary>
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,6 +38,8 @@ public class PM : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         //playerAnimator = GetComponent<Animator>();
     }
+
+   
 
     // Update is called once per frame
     void Update()
@@ -47,6 +53,8 @@ public class PM : MonoBehaviour
 
         // Handles rotation and animations of player
         PlayerRotationAndAnimations();
+
+        
 
         //jump method
         PlayerInputJump();
@@ -106,7 +114,7 @@ public class PM : MonoBehaviour
             playerAnimator.SetBool("isPJumping", false);
         }
 
+        
 
-
-    }
+}
 }

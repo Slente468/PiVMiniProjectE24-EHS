@@ -155,7 +155,7 @@ public class PlayerManager : MonoBehaviour
         if (isMoving == true)
         {
             isPIdle = false;
-            ;
+            
 
             isPWalking = !Input.GetKey(KeyCode.LeftShift);
             isPRunning = Input.GetKey(KeyCode.LeftShift);
